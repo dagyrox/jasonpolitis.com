@@ -43,14 +43,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "ng2/src/main.ts",
-			"settings":
-			{
-				"buffer_size": 248,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -92,14 +84,13 @@
 	},
 	"expanded_folders":
 	[
-		"/C/code/jasonpolitis.com",
-		"/C/code/jasonpolitis.com/ng2",
-		"/C/code/jasonpolitis.com/ng2/src"
+		"/C/code/jasonpolitis.com"
 	],
 	"file_history":
 	[
-		"/C/code/jasonpolitis.com/ng2/src/main.ts",
 		"/C/code/jasonpolitis.com/index.html",
+		"/C/Users/Jason Politis/Desktop/windows-1.ovpn",
+		"/C/code/jasonpolitis.com/ng2/src/main.ts",
 		"/C/code/jasonpolitis.com/ng2/src/main.js",
 		"/C/code/jasonpolitis.com/ng2/src/vendor.ts",
 		"/C/code/jasonpolitis.com/ng2/src/app/app.routing.ts",
@@ -283,37 +274,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "ng2/src/main.ts",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 248,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								248,
-								248
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -399,10 +361,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 408.0,
+	"side_bar_visible": false,
+	"side_bar_width": 264.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
