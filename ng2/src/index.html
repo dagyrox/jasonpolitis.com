@@ -1,95 +1,47 @@
 <!doctype html>
 <html>
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<meta content="" name="description" />
-	<meta content="" name="author" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-	<title>Jason Politis</title>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Jason Politis</title>
 
-  <base href="/">
+    <base href="/">
 
-  {{content-for 'head'}}
-  
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    {{content-for 'head'}}
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-	<!-- Bootstrap Core CSS -->
-	<link href="content/css/bootstrap.min.css" rel="stylesheet" /><!-- Custom CSS -->
-	<link href="content/css/grayscale.css" rel="stylesheet" /><!-- Custom Fonts -->
-	<link href="content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <ng2-app></ng2-app>
+    <!-- Bootstrap Core CSS -->
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" /><!-- Custom CSS -->
+    <link href="content/css/grayscale.css" rel="stylesheet" /><!-- Custom Fonts -->
+    <link href="content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <ng2-app></ng2-app>
+    <!-- Map Section --><!--<div id="map"></div>--><!-- Footer -->
 
-<section class="content-section text-center" id="resume">
-<div class="download-section">
-<div class="container">
-<div class="col-lg-8 col-lg-offset-2">
-<h2>Download Technical Resume</h2>
+    <!-- jQuery --><script src="js/jquery.js"></script><!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script><!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script><!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ --><!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>--><!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
 
-<p>Want to know what makes Jason tick?</p>
+    <script src="vendor/es6-shim/es6-shim.js"></script>
+    <script src="vendor/reflect-metadata/Reflect.js"></script>
+    <script src="vendor/systemjs/dist/system.src.js"></script>
+    <script src="vendor/zone.js/dist/zone.js"></script>
 
-<p>Download his technical resume here.</p>
-<a class="btn btn-default btn-lg" href="http://jasonpolitis.com/downloads/resume/jasonpolitis_resume.docx">Download</a></div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-
-<section class="container content-section text-center" id="contact">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2">
-<h2>Contact Jason</h2>
-
-<p>This page is always a work in progress, so please check back for updates or changes. Feel free to email Jason to provide some feedback, give him suggestions, or to just say hello!</p>
-
-<p><a href="tel:727.919.4009">727.919.4009</a> | <a href="mailto:jppolitis@gmail.com">jppolitis@gmail.com</a></p>
-
-<ul class="list-inline banner-social-buttons"><!--<li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>-->
-	<li><a class="btn btn-default btn-lg" href="https://plus.google.com/+jasonpolitis" target="_blank"><i class="fa fa-google fa-fw"></i><div class='network-name fadeOut'>google+</div></a></li>
-	<li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/jasonpolitis" target="_blank"><i class="fa fa-linkedin fa-fw"></i><div class='network-name fadeOut'>LinkedIn</div></a></li>
-	<li><a class="btn btn-default btn-lg" href="https://twitter.com/dagyrox" target="_blank"><i class="fa fa-twitter fa-fw"></i><div class='network-name fadeOut'>Twitter</div></a></li>
-	<li><a class="btn btn-default btn-lg" href="https://instagram.com/politisjp" target="_blank"><i class="fa fa-instagram fa-fw"></i><div class='network-name fadeOut'>Instagram</div></a></li>
-	<li><a class="btn btn-default btn-lg" href="https://www.youtube.com/jasonpolitis" target="_blank"><i class="fa fa-youtube fa-fw"></i><div class='network-name fadeOut'>YouTube</div></a></li>
-	<li><a class="btn btn-default btn-lg" href="https://github.com/dagyrox" target="_blank"><i class="fa fa-github fa-fw"></i><div class='network-name fadeOut'>GitHub</div></a></li>
-</ul>
-</div>
-<!-- LightWidget WIDGET -->
-<!--div class="col-lg-12"><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/5de4c678e8225f8cb34742a7ad593bbc.html" id="lightwidget_5de4c678e8" name="lightwidget_5de4c678e8"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 10%; border: 0; overflow: hidden;"></iframe>
-</div-->
-</div>
-</section>
-<!-- Map Section --><!--<div id="map"></div>--><!-- Footer -->
-
-  <footer>
-    <div class="container text-center"><!--<p>Copyright &copy; jasonpolitis.com 2014</p>-->
-      <a href="http://jasonpolitis.com/login.html" target="_blank">Jason Politis</a> &copy; 2012 | concept &amp; design by <a href="http://www.jasonpolitis.com" target="_blank">Jason Politis</a> | Hosting by <a href="http://godaddy.com" target="_blank">GoDaddy</a> | Photography by Nicole Politis</div>
-  </footer>
-
-  <!-- jQuery --><script src="js/jquery.js"></script><!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script><!-- Plugin JavaScript -->
-  <script src="js/jquery.easing.min.js"></script><!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ --><!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>--><!-- Custom Theme JavaScript -->
-  <script src="js/grayscale.js"></script>
-
-  <script src="vendor/es6-shim/es6-shim.js"></script>
-  <script src="vendor/reflect-metadata/Reflect.js"></script>
-  <script src="vendor/systemjs/dist/system.src.js"></script>
-  <script src="vendor/zone.js/dist/zone.js"></script>
-
-  <script>
-    System.import('system-config.js').then(function () {
-      System.import('main');
-    }).catch(console.error.bind(console));
-  </script>
-</body>
+    <script>
+      System.import('system-config.js').then(function () {
+        System.import('main');
+      }).catch(console.error.bind(console));
+    </script>
+    
+  </body>
 </html>
