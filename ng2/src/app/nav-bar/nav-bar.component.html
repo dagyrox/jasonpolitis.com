@@ -1,24 +1,28 @@
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button"></button>
-      <a class="navbar-brand page-scroll" href="#page-top" onmouseleave="navbarBrandUnFocus()" onmouseover="navbarBrandFocus()">
-        <span class="jplogo"><img class="jplogo" src="content/img/JPb.png" /></span> 
-        <span class="collapse navbar-collapse" style="float:left"> 
-          <span class="jpbrand" style="float:left"> 
-            <span id="brandj" class='brandJP'>J</span>ason
-            <span id="brandp" class='brandJP'>P</span>olitis
-          </span> 
+      <button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand page-scroll" href="#page-top" (mouseenter)="setHover()" (mouseleave)="removeHover()" (click)="closeNavBar()">
+        <span class="brandContainer" [ngClass]="{brandJPBackground: brandHover}">
+          <div class="jplogo-base"></div>
+          <div class="jplogo-img">
+            <img src="./content/img/JPb.png" />
+          </div>
+        </span>
+        <span class="collapse navbar-collapse jp-name">
+          <span [ngClass]="{brandJP: brandHover}">J</span>ason
+          <span [ngClass]="{brandJP: brandHover}">P</span>olitis
         </span> 
       </a>
     </div>
-
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
         <li class="hidden"></li><!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li><a class="page-scroll" href="#about">About</a></li>
-        <li><a class="page-scroll" href="#resume">Resume</a></li>
-        <li><a class="page-scroll" href="#contact">Contact</a></li>
+        <li><a class="page-scroll" href="#about" (click)="closeNavBar()">About</a></li>
+        <li><a class="page-scroll" href="#resume"  (click)="closeNavBar()">Resume</a></li>
+        <li><a class="page-scroll" href="#contact" (click)="closeNavBar()">Contact</a></li>
       </ul>
     </div>
   </div>
