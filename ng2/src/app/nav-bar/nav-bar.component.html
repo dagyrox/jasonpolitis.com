@@ -4,18 +4,7 @@
       <button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button">
         <i class="fa fa-bars"></i>
       </button>
-      <a class="navbar-brand page-scroll" href="#page-top" (mouseenter)="setHover()" (mouseleave)="removeHover()" (click)="closeNavBar()">
-        <span class="brandContainer" [ngClass]="{brandJPBackground: brandHover}">
-          <div class="jplogo-base"></div>
-          <div class="jplogo-img">
-            <img src="./content/img/JPb.png" />
-          </div>
-        </span>
-        <span class="collapse navbar-collapse jp-name">
-          <span [ngClass]="{brandJP: brandHover}">J</span>ason
-          <span [ngClass]="{brandJP: brandHover}">P</span>olitis
-        </span> 
-      </a>
+      <app-jp-logo></app-jp-logo>
     </div>
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">

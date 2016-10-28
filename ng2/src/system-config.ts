@@ -35,6 +35,7 @@ const barrels: string[] = [
   'app/resume',
   'app/contact',
   'app/footer',
+  'app/jp-logo',
   /** @cli-barrel */
 ];
 
