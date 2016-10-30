@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'app-contact',
   templateUrl: 'contact.component.html',
-  styleUrls: ['contact.component.css']
+  styleUrls: ['contact.component.css', '../../content/css/style.css']
 })
 export class ContactComponent implements OnInit {
 

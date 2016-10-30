@@ -1,12 +1,12 @@
 <a class="navbar-brand page-scroll" href="#page-top" (mouseenter)="setHover()" (mouseleave)="removeHover()" (click)="closeNavBar()">
-  <span class="brandContainer" [ngClass]="{brandJPBackground: brandHover}">
+  <span class="brandContainer brandJPBackground" [ngClass]="{brandJPBackgroundHover: brandHover}">
     <div class="jplogo-base"></div>
     <div class="jplogo-img">
       <img src="./content/img/JPb.png" />
     </div>
   </span>
   <span class="collapse navbar-collapse jp-name">
-    <span [ngClass]="{brandJP: brandHover}">J</span>ason
-    <span [ngClass]="{brandJP: brandHover}">P</span>olitis
+    <span class="brandJP" [ngClass]="{brandJPHover: brandHover}">J</span>ason
+    <span class="brandJP" [ngClass]="{brandJPHover: brandHover}">P</span>olitis
   </span> 
 </a>

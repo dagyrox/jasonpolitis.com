@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'app-resume',
   templateUrl: 'resume.component.html',
-  styleUrls: ['resume.component.css']
+  styleUrls: ['resume.component.css', '../../content/css/style.css']
 })
 export class ResumeComponent implements OnInit {
 

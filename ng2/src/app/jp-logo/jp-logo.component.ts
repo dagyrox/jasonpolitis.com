@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'app-jp-logo',
   templateUrl: 'jp-logo.component.html',
-  styleUrls: ['jp-logo.component.css']
+  styleUrls: ['jp-logo.component.css', '../../content/css/style.css']
 })
 export class JpLogoComponent implements OnInit {
 
@@ -23,5 +23,9 @@ export class JpLogoComponent implements OnInit {
   removeHover(){
     this.brandHover = false;
   }
+  
+  public closeNavBar(){
+    $('.navbar-toggle:visible').click();
+  };
 
 }

@@ -5,22 +5,22 @@ import { JpLogoComponent } from './../jp-logo/jp-logo.component';
   moduleId: module.id,
   selector: 'app-nav-bar',
   templateUrl: 'nav-bar.component.html',
-  styleUrls: ['nav-bar.component.css'],
+  styleUrls: ['nav-bar.component.css', '../../content/css/style.css'],
   directives: [JpLogoComponent]
 })
 
 export class NavBarComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
-  brandHover: boolean = false;
+  jpLogo: JpLogoComponent = new JpLogoComponent();
 
   ngOnInit() {
     
   }
   
   closeNavBar(){
-    $('.navbar-toggle:visible').click();
+    this.jpLogo.closeNavBar();
   };
 
 }

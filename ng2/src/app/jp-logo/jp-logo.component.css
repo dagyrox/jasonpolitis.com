@@ -26,6 +26,7 @@
     position: relative;
     left: 40px;
     color:white;
+    font-weight: 700;
 }
 
 img
@@ -35,10 +36,18 @@ img
 	height:28px;
 }
 .brandJP{
+    color: white;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.brandJPHover{
     color: rgb(255,86,0);
     -webkit-transition: all 0.5s ease-in-out;
 }
 .brandJPBackground{
+    background:white;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.brandJPBackgroundHover{
     background:rgb(255,86,0);
     -webkit-transition: all 0.5s ease-in-out;
 }

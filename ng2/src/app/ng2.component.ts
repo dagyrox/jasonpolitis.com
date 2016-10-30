@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
   moduleId: module.id,
   selector: 'ng2-app',
   templateUrl: 'ng2.component.html',
-  styleUrls: ['ng2.component.css'],
+  styleUrls: ['ng2.component.css', '../../content/css/style.css'],
   directives: [
     NavBarComponent, 
     IntroComponent, 
