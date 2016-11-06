@@ -13,12 +13,13 @@
                           <li>
                               <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                           </li>-->
-        <li><a class="btn btn-default btn-lg" href="https://plus.google.com/+jasonpolitis" target="_blank"><i class="fa fa-google fa-fw"></i><div class='network-name fadeOut'>google+</div></a></li>
-        <li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/jasonpolitis" target="_blank"><i class="fa fa-linkedin fa-fw"></i><div class='network-name fadeOut'>LinkedIn</div></a></li>
-        <li><a class="btn btn-default btn-lg" href="https://twitter.com/dagyrox" target="_blank"><i class="fa fa-twitter fa-fw"></i><div class='network-name fadeOut'>Twitter</div></a></li>
-        <li><a class="btn btn-default btn-lg" href="https://instagram.com/politisjp" target="_blank"><i class="fa fa-instagram fa-fw"></i><div class='network-name fadeOut'>Instagram</div></a></li>
-        <li><a class="btn btn-default btn-lg" href="https://www.youtube.com/jasonpolitis" target="_blank"><i class="fa fa-youtube fa-fw"></i><div class='network-name fadeOut'>YouTube</div></a></li>
-        <li><a class="btn btn-default btn-lg" href="https://github.com/dagyrox" target="_blank"><i class="fa fa-github fa-fw"></i><div class='network-name fadeOut'>GitHub</div></a></li>
+        <!--<li><a class="btn btn-default btn-lg" href="https://plus.google.com/+jasonpolitis" target="_blank"><i class="fa fa-google fa-fw"></i><div class='network-name'>google+</div></a></li>
+        <li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/jasonpolitis" target="_blank"><i class="fa fa-linkedin fa-fw"></i><div class='network-name'>LinkedIn</div></a></li>
+        <li><a class="btn btn-default btn-lg" href="https://twitter.com/dagyrox" target="_blank"><i class="fa fa-twitter fa-fw"></i><div class='network-name'>Twitter</div></a></li>
+        <li><a class="btn btn-default btn-lg" href="https://instagram.com/politisjp" target="_blank"><i class="fa fa-instagram fa-fw"></i><div class='network-name'>Instagram</div></a></li>
+        <li><a class="btn btn-default btn-lg" href="https://www.youtube.com/jasonpolitis" target="_blank"><i class="fa fa-youtube fa-fw"></i><div class='network-name'>YouTube</div></a></li>
+        <li><a class="btn btn-default btn-lg" href="https://github.com/dagyrox" target="_blank"><i class="fa fa-github fa-fw"></i><div class='network-name'>GitHub</div></a></li>-->
+        <a class="btn btn-default btn-lg" *ngFor="#contact of contacts" href="{{contact.url}}" target="_blank"><i class="fa fa-{{contact.icon}} fa-fw"></i><div class='network-name'>{{contact.text}}</div></a>
       </ul>
     </div>
 
