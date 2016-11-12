@@ -11,10 +11,9 @@ import { ContactService } from './contact.service';
 export class ContactComponent implements OnInit {
 
   constructor(private contactService: ContactService) {}
-    contacts: any;
 
   ngOnInit() {
-    this.contacts = this.contactService.getContacts();
+    this.contactService.getContacts();
   }
 
 }

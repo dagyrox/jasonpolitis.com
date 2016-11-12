@@ -1,45 +1,17 @@
 import { Injectable } from '@angular/core';
-//import { HttpModule } from '@angular/http';
+import { Http, Response} from '@angular/http';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class ContactService {
 
-  constructor() {}
+  constructor(private http: Http) {}
+
+  contacts: any = [];
 
   getContacts(){
-    var contacts = [{
-      url: 'https://plus.google.com/+jasonpolitis',
-      icon: 'google',
-      text: 'google+'
-    },
-    {
-      url: 'https://www.linkedin.com/in/jasonpolitis',
-      icon: 'linkedin',
-      text: 'LinkedIn'
-    },
-    {
-      url: 'https://twitter.com/dagyrox',
-      icon: 'twitter',
-      text: 'Twitter'
-    },
-    {
-      url: 'https://instagram.com/politisjp',
-      icon: 'instagram',
-      text: 'Instagram'
-    },
-    {
-      url: 'https://www.youtube.com/jasonpolitis',
-      icon: 'youtube',
-      text: 'YouTube'
-    },
-    {
-      url: 'https://github.com/dagyrox',
-      icon: 'github',
-      text: 'GitHub'
-    }
-  ];
-
-    return contacts;
+    this.http.get('https://api.mlab.com/api/1/databases/jasonpolitis/collections/contact?apiKey=k56WFUmi3xihkLn0saKx1xwZm_dDB5JJ')
+    .subscribe(result => this.contacts = result.json());
   }
 
 }

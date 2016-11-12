@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HTTP_PROVIDERS} from '@angular/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component'; 
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     ResumeComponent, 
     ContactComponent,
     FooterComponent
-  ]
+  ],
+  viewProviders: [HTTP_PROVIDERS]
 })
 export class Ng2AppComponent {
   title = 'ng2 works great';
