@@ -1,0 +1,18 @@
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button">
+        <i class="fa fa-bars"></i>
+      </button>
+      <app-jp-logo></app-jp-logo>
+    </div>
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <li class="hidden"></li><!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li><a class="page-scroll" href="#about" (click)="closeNavBar()">About</a></li>
+        <li><a class="page-scroll" href="#resume"  (click)="closeNavBar()">Resume</a></li>
+        <li><a class="page-scroll" href="#contact" (click)="closeNavBar()">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
